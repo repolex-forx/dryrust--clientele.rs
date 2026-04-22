@@ -1,0 +1,17 @@
+[2026-04-22T14:46:41Z] === ENRICH ITERATION 1 START | repo=dryrust/clientele.rs sha=18a9d41f ===
+[2026-04-22T14:46:41Z] [iter=1] PHASE START: enrich repo=dryrust/clientele.rs sha=18a9d41f runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/18a9d41f-enrich-iter-001.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/18a9d41f329119836131c590ec8710bdddc65862.nq.gz
+[2026-04-22T14:46:41Z] [iter=1] Step 1: Loading AST into disk-backed store mem_mb=76 MB
+[2026-04-22T14:46:41Z] [iter=1] AST store loaded triples=22442 load_secs=0 mem_mb=115 MB
+[2026-04-22T14:46:41Z] [iter=1] Step 2: Finding LSP targets mem_mb=115 MB
+[2026-04-22T14:46:41Z] [iter=1] LSP targets found call_sites=176 imports=27 extends=0 implements=0 secs=0
+[2026-04-22T14:46:41Z] [iter=1] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=115 MB
+[2026-04-22T14:46:41Z] [iter=1] Position index built positions=1541 nodes_with_types=1846 secs=0 mem_mb=115 MB
+[2026-04-22T14:46:41Z] [iter=1] Step 3: Starting LSP resolution mem_mb=115 MB already_completed_types=[] already_completed_files=0
+[2026-04-22T14:46:41Z] [iter=1] Resolving target type target_type=call_site count=176
+[2026-04-22T14:47:11Z] [iter=1] Target type resolved target_type=call_site resolved=78 errors=65 secs=30 mem_mb=115 MB
+[2026-04-22T14:47:11Z] [iter=1] Resolving target type target_type=import_statement count=27
+[2026-04-22T14:47:12Z] [iter=1] HEARTBEAT target_type=import_statement elapsed_min=0.5 files_done=0 resolved=0 errors=0 current=lib/clientele/src/crates.rs
+[2026-04-22T14:47:34Z] [iter=1] Target type resolved target_type=import_statement resolved=27 errors=0 secs=23 mem_mb=115 MB
+[2026-04-22T14:47:46Z] [iter=1] Step 5: Writing final enrichment file triples=1722
+[2026-04-22T14:47:46Z] [iter=1] Enrichment file written path=/home/runner/work/forx/forx/storage/aggregate/lsp/18a9d41f329119836131c590ec8710bdddc65862.nq.gz size_kb=26
+[2026-04-22T14:47:46Z] [iter=1] PHASE END: enrich elapsed_s=65 elapsed_min=1.1 total_triples=1722
