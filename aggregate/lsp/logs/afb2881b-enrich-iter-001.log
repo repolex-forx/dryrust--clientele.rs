@@ -1,0 +1,18 @@
+[2026-05-12T03:18:06Z] === ENRICH ITERATION 1 START | repo=dryrust/clientele.rs sha=afb2881b ===
+[2026-05-12T03:18:06Z] [iter=1] PHASE START: enrich repo=dryrust/clientele.rs sha=afb2881b runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/afb2881b-enrich-iter-001.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/afb2881b9b9156588ff4b270da93718a3a4770f8.nq.gz
+[2026-05-12T03:18:06Z] [iter=1] Step 1: Loading AST into disk-backed store mem_mb=76 MB
+[2026-05-12T03:18:06Z] [iter=1] AST store loaded triples=22442 load_secs=0 mem_mb=116 MB
+[2026-05-12T03:18:06Z] [iter=1] Step 2: Finding LSP targets mem_mb=116 MB
+[2026-05-12T03:18:06Z] [iter=1] LSP targets found call_sites=176 imports=27 extends=0 implements=0 secs=0
+[2026-05-12T03:18:06Z] [iter=1] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=116 MB
+[2026-05-12T03:18:06Z] [iter=1] Position index built positions=1541 nodes_with_types=1846 secs=0 mem_mb=116 MB
+[2026-05-12T03:18:06Z] [iter=1] Step 3: Starting LSP resolution mem_mb=116 MB already_completed_types=[] already_completed_files=0
+[2026-05-12T03:18:06Z] [iter=1] Resolving target type target_type=call_site count=176
+[2026-05-12T03:18:36Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=0.5 files_done=7 resolved=74 errors=63 current=lib/clientele/src/options.rs
+[2026-05-12T03:18:42Z] [iter=1] Target type resolved target_type=call_site resolved=78 errors=65 secs=35 mem_mb=116 MB
+[2026-05-12T03:18:42Z] [iter=1] Resolving target type target_type=import_statement count=27
+[2026-05-12T03:19:08Z] [iter=1] HEARTBEAT target_type=import_statement elapsed_min=1.0 files_done=3 resolved=19 errors=0 current=lib/clientele/tests/subcommands_shared.rs
+[2026-05-12T03:19:09Z] [iter=1] Target type resolved target_type=import_statement resolved=27 errors=0 secs=27 mem_mb=116 MB
+[2026-05-12T03:19:21Z] [iter=1] Step 5: Writing final enrichment file triples=1722
+[2026-05-12T03:19:21Z] [iter=1] Enrichment file written path=/home/runner/work/forx/forx/storage/aggregate/lsp/afb2881b9b9156588ff4b270da93718a3a4770f8.nq.gz size_kb=27
+[2026-05-12T03:19:21Z] [iter=1] PHASE END: enrich elapsed_s=75 elapsed_min=1.2 total_triples=1722
